@@ -1,0 +1,45 @@
+======================================================================= 
+README: pracownia 1 do wykładu Podstawy Grafiki Komputerowej 
+        (c) Andrzej Łukaszewski  5..X.2020
+======================================================================= 
+
+Do kompilacji całego katalogu przykładów ze strony tutoriala: 
+
+   http://www.opengl-tutorial.org/
+
+potrzebny jest kompilator g++, cmake, make co można zainstalować pod
+sytemem Linux Ubuntu/Debian:
+
+   sudo apt install build-essential g++ cmake
+   
+Do osobnej kompilacji własnego programu też warto zainstalować w systemie
+potrzebne biblioteki: OpenGL, GLEW, GLFW, GLM (domyślnie są używane te
+z drzewa katalogów tutoriala):
+
+   sudo apt install libglfw3-dev libglew-dev libglm-dev
+
+Wtedy możemy kompilować przy pomocy skryptu compile.sh lub poleceniem make
+przykładowy program z tutoriala w tym katalogu, bez całego drzewa tutoriala
+(przetestowane pod systemem Linux Ubuntu 20.04, ale także poprzednie).
+
+======================================================================= 
+
+Do działania oczywiście niezbędne jest aby był działający driver OpenGL,
+jeśli nie mamy osobnej karty graficznej, to najczęściej mamy już jakiś
+działający driver. Jeśli mamy osobną kartę GPU wtedy warto doinstalować
+driver producenta np. pod Ubuntu z doświadczeń z kartami NVidia w miarę
+bezpiecznie z pakietu dostępnego w dystrybucji poleceniem:
+
+   sudo ubuntu-drivers autoinstall
+
+Dodatkowo instalując poleceniem: 
+
+   sudo apt install opengl-4-man-doc manpages-dev mesa-utils glew-utils
+
+mamy dokumentacje funkcji OpenGL dostępną programem man, oraz programy
+glewinfo i glxinfo, które podają wersje i możliwości działającego drivera
+OpenGL.  można przefiltrować ich wyjście np. w ten sposób:
+
+   glxinfo | grep -i version
+   
+Wtedy wiemy jaki obecnie mamy driver OpenGL i jakie wersje obsługuje.    

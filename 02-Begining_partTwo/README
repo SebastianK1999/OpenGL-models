@@ -1,0 +1,2 @@
+Aby doinstalować bibliotekę epoxy, pod debian/ubuntu:
+      sudo apt install libepoxy-dev
