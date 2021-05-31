@@ -11,6 +11,7 @@ Programs in this reposity are assignments for "basics of computer graphics" clas
 7. Texturing - Test for object loading and texturing and perlin noise  
 
 ### Images
+![Earth up close picture - Saint Thomas and Prince](Images/EarthUpClose.png "Saint Thomas and Prince islands")
 ![Earth picture](Images/Earth.png "Earth")
 ![Texturing picture](Images/aia.png "Texturing")
 ![Bubbles picture](Images/Bubbles.png "Bubbles")
